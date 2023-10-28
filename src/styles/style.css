@@ -31,7 +31,7 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px 16px;
+  padding: 4px 40px;
   border-bottom: 1px solid #aaa;
 }
 
@@ -39,6 +39,10 @@ textarea::placeholder {
   margin: 8px 0;
   flex: 1;
   color: white;
+}
+
+.input-notes__search {
+  width: 20vw;
 }
 
 .note-app__body {
@@ -73,9 +77,17 @@ textarea::placeholder {
   text-align: right;
   color: #aaa;
 }
+.note-input__char-limit-exceeded {
+  font-size: 14px;
+  color: red;
+}
 
 .note-input__body {
   min-height: 175px;
+}
+
+#textarea-body {
+  height: 25vh;
 }
 
 .note-input button {

@@ -1,5 +1,4 @@
 import React from "react";
-// import { createRoot } from "react-dom/client";
 import Header from "./NotesHeader";
 import { getInitialData } from "../utils/data";
 import NoteInput from "./NotesInput";
@@ -35,6 +34,7 @@ class NotesApp extends React.Component {
             archived: false,
           },
         ],
+        activeNotesUpperKeyword: [],
       };
     });
   }
@@ -68,6 +68,7 @@ class NotesApp extends React.Component {
       this.setState({
         notes: notesState.filter((note) => note.id !== id),
         archivedNotes: [...archivedNotes, archivedNote],
+        activeNotesUpperKeyword: [],
       });
     }
   }

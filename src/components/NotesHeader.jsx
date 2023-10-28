@@ -11,7 +11,7 @@ function Header({ notes, searchNotes, setInputSearchValue, setActiveNotesUpperKe
 
   return (
     <div className='note-app__header'>
-      <h1>Notes</h1>
+      <h1>Notes-app</h1>
       <form>
         <input className='input-notes__search' id='search' type='search' placeholder='Search...' value={searchNotes} onChange={onSearchNotes} />
       </form>
